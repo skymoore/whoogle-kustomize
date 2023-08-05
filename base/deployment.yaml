@@ -10,6 +10,9 @@ spec:
       containers:
       - name: whoogle
         image: benbusby/whoogle-search:latest
+        envFrom:
+        - configMapRef:
+            name: whoogle-env
         ports:
         - name: whoogle-http
           containerPort: 5000

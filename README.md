@@ -1,0 +1,1 @@
+# Whoogle Kustomize Deployment

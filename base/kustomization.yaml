@@ -5,3 +5,9 @@ kind: Kustomization
 resources:
   - deployment.yaml
   - service.yaml
+
+configMapGenerator:
+  - name: whoogle-env
+    files:
+      - config/whoogle.env
+    

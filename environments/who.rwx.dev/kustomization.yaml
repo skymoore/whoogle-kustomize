@@ -13,3 +13,10 @@ resources:
   - ../../base
   - certificate.yaml
   - ingress.yaml
+
+configMapGenerator:
+  - name: whoogle-env
+    behavior: replace
+    files:
+      - config/whoogle.env
+    
