@@ -1,0 +1,13 @@
+---
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: keycloak
+spec:
+  secretName: tls-cert
+  issuerRef:
+    name: letsencrypt
+    kind: ClusterIssuer
+  commonName: 'who.rwx.dev'
+  dnsNames:
+  - 'who.rwx.dev'

@@ -1,0 +1,15 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: whoogle
+spec:
+  replicas: 1
+  template:
+    spec:
+      containers:
+      - name: whoogle
+        image: benbusby/whoogle-search:latest
+        ports:
+        - name: whoogle-http
+          containerPort: 5000
